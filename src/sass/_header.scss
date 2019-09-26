@@ -13,6 +13,10 @@
 	flex-grow: 1;
 	justify-content: space-between;
 	max-width: $contentWidth;
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
 nav {
