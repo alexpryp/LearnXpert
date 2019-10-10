@@ -1,5 +1,6 @@
 .slider {
 	display: flex;
+	font-family: Arial, sans-serif;
 	justify-content: center;
 	align-items: center;
 	height: 900px;
@@ -35,8 +36,13 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin-bottom: -230px;
+	z-index: 10;
 }
 .slider-events-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 376px;
 	height: 268px;
 	padding: 25px;
@@ -58,8 +64,65 @@
 	color: #4D4D4D;
 }
 .card-date {
+	font-size: 30px;
+	font-weight: bold;
+	color: #4D4D4D;
 	text-transform: uppercase;
 }
 .card-event-name {
+	font-size: 18px;
+	font-weight: bold;
+	color: #808080;
 	text-transform: uppercase;
+}
+.card-line {
+	width: 84px;
+	border: 1px solid #1A56D6;
+}
+.card-event-start {
+	color: #4D4D4D;
+}
+.button a {
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+	width: 126px;
+	height: 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-color: #1A56D6;
+	border: 2px solid #1A56D6;
+}
+.button a:hover {
+	color: #1A56D6;
+	background-color: #fff;
+}
+.admission {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.admission-become {
+	font-size: 30px;
+	color: #4D4D4D;
+	text-align: center;
+}
+.admission-now a {
+	display: block;
+	margin: 0 auto;
+	width: 271px;
+	height: 68px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 24px;
+	border: 2px solid #1A56D6;
+	color: #1A56D6;
+}
+.admission-now a:hover {
+	color: #fff;
+	background-color: #1A56D6;
 }

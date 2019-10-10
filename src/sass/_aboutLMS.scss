@@ -1,0 +1,21 @@
+.about-LMS {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 658px;
+}
+.about-LMS-content {
+	display: flex;
+	flex-grow: 1;
+	max-width: $contentWidth;
+}
+.about-LMS-content-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	h2 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
