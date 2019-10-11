@@ -1,0 +1,101 @@
+.courses {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.courses-content {
+	max-width: $contentWidth;
+	h2 {
+		font-size: 30px;
+		color: #4D4D4D;
+		padding-left: 10px;
+	}
+}
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cards-card {
+	display: flex;
+	flex-direction: column;
+	width: 376px;
+	height: 730px;
+	margin: 10px;
+	box-shadow: 0px 0px 5px 0px #666;
+}
+.cards-card-image {
+	width: 376px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.fashion-image {
+	background-image: url(../../images/courses/fashion.jpeg);
+}
+.mathematics-image {
+	background-image: url(../../images/courses/mathematics.jpeg);
+}
+.marketing-image {
+	background-image: url(../../images/courses/marketing.jpeg);
+}
+.cards-card-info {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 22px;
+}
+.type {
+	display: flex;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.type-info {
+	color: #555;
+	font-size: 13px;
+}
+.price-info {
+	color: #1414D9;
+	font-size: 23px;
+	font-weight: bold;
+}
+.course {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	justify-content: space-between;
+	color: #333;
+	font-size: 18px;
+}
+.description {
+	color: #666666;
+}
+.apply-button a {
+	display: block;
+	width: 162px;
+	height: 52px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	padding: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-color: #1A56D6;
+	border: 2px solid #1A56D6;
+}
+.apply-button a:hover {
+	color: #1A56D6;
+	background-color: #fff;
+}
+.rating {
+	font-size: 13px;
+	color: #999;
+}
+.rating-checked {
+	color: orange;
+}

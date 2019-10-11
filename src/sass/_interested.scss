@@ -6,5 +6,38 @@
 	background: linear-gradient(164deg, #F7F7F7 60%, #FFF 60%, #FFF 40%);
 }
 .interested-content {
-	
+	max-width: $contentWidth;
+	h2 {
+		padding-left: 10px;
+		font-size: 30px;
+		color: #4D4D4D;
+		font-weight: bold;
+	}
+}
+.interested-content-slideset {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.interested-content-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 376px;
+	height: 275px;
+	margin: 10px;
+	color: #333333;
+	background-color: #fff;
+	box-shadow: 0px 0px 5px 0px #666;
+
+	p {
+		font-size: 30px;
+		color: #666666;
+		margin: 0px;
+	}
+}
+.interested-picture {
+	font-size: 88px;
 }
