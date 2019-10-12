@@ -1,0 +1,77 @@
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.gallery-content {
+	display: grid;
+	position: relative;
+	//grid-template-columns: 1fr 1fr 1fr 1fr;
+	max-width: 1980px;
+
+	grid-template-areas:
+    "photo1 photo2 photo3 photo3"
+    "photo4 photo4 photo3 photo3"
+}
+.gallery-photo1 {
+	grid-area: photo1;
+}
+.gallery-photo2 {
+	grid-area: photo2;
+}
+.gallery-photo3 {
+	grid-area: photo3;
+}
+.gallery-photo4 {
+	grid-area: photo4;
+}
+
+.gallery-p {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.gallery-photo1 {
+	width: 475px;
+	height: 340px;
+	background-image: url(../../images/gallery/photo1.jpeg);
+}
+.gallery-photo2 {
+	width: 475px;
+	height: 340px;
+	background-image: url(../../images/gallery/photo2.jpeg);
+}
+.gallery-photo3 {
+	width: 950px;
+	height: 680px;
+	background-image: url(../../images/gallery/photo3.jpeg);
+}
+.gallery-photo4 {
+	width: 950px;
+	height: 340px;
+	background-image: url(../../images/gallery/photo4.jpeg);
+}
+.view-images-button {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -135px;
+	opacity: 0.7;
+}
+.view-images-button a {
+	display: block;
+	width: 270px;
+	height: 68px;
+	text-align: center;
+	padding: 23px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-color: #1A56D6;
+	border: 2px solid #1A56D6;
+}
+.view-images-button a:hover {
+	color: #1A56D6;
+	background-color: #fff;
+}

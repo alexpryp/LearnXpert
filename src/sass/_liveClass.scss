@@ -1,0 +1,88 @@
+.live-class {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 540px;
+	color: #333333;
+	background-color: #D7D7D7;
+}
+.live-class-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: $contentWidth;
+}
+.live-class-description {
+	flex-basis: 50%;
+}
+.live-class-description h2 {
+	font-size: 30px;
+	color: #4D4D4D;
+	margin-top: 10px;
+}
+.live-class-description h3 {
+	font-size: 24px;
+	color: #4D4D4D;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.live-class-description p {
+	max-width: 500px;
+	color: #333;
+	margin: 45px 0;
+}
+.classes-button a {
+	display: block;
+	width: 271px;
+	height: 68px;
+	text-align: center;
+	padding: 23px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-color: #1A56D6;
+	border: 2px solid #1A56D6;
+}
+.classes-button a:hover {
+	color: #1A56D6;
+	background-color: #fff;
+}
+.live-class-videos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	flex-basis: 50%;
+}
+.live-class-videos-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 475px;
+	height: 285px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../../images/liveClass/liveClassVideo.jpeg);
+	box-shadow: 0px 0px 10px 0px #666;
+}
+.live-class-videos-selector {
+	display: flex;
+	align-items: center;
+	width: 475px;
+	margin-top: 15px;
+}
+.live-class-videos-selector .prev p, .live-class-videos-selector .next p {
+	font-family: Arial, sans-serif;
+	background-color: #1A56D6;
+	color: #fff;
+	padding: 4px;
+	border-radius: 3px;
+	margin: 0 2px;
+}
+.selector-pointer {
+	flex-grow: 1;
+	text-align: center;
+	font-size: 18px;
+}
