@@ -1,0 +1,13 @@
+footer {
+	height: 800px;
+	background-color: #212121;
+}
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $contentWidth;
+}
+.signup {
+	color: #fff;
+}
