@@ -6,20 +6,25 @@ const cssmin = require('gulp-cssmin'); //Минификатор CSS файлов
 const del = require('del');
 const babel = require('gulp-babel');
 const sourcemaps = require('gulp-sourcemaps');
+const rename = require('gulp-rename');
 
 
 sass.compiler = require('node-sass');
 
+
+//.pipe(cssmin())
+
 function styles() {
-	return gulp.src('./src/sass/style.scss') //берём файлы на обработку
-				.pipe(sourcemaps.init())
+	return gulp.src('./src/sass/*.scss') //берём файлы на обработку
+				.pipe(sourcemaps.init()) //инициализация создания карт исходного кода
 				.pipe(sass().on('error', sass.logError)) //компиляция из scss в css
 				.pipe(autoprefixer({
 		            overrideBrowserlist: ['> 1%'],
 		            cascade: false
 		        }))
-				.pipe(cssmin())
-				.pipe(sourcemaps.write('./dist/css'))
+				//.pipe(cssmin())
+				//.pipe(rename({ suffix: '.min', prefix : '' }))
+				.pipe(sourcemaps.write('./')) // сохранение карты исходного кода
 				.pipe(gulp.dest('./dist/css')); //сохраняем обработанные файлы
 }
 
