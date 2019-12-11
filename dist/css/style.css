@@ -36,6 +36,7 @@ nav {
 
 .nav-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
   flex-grow: 1;
@@ -64,7 +65,7 @@ nav {
   font-family: Arial, sans-serif;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  min-height: 750px;
   background-image: url(../../images/slider/slider_bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,6 +94,7 @@ nav {
 
 .slider-events {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: -80px;
@@ -105,6 +107,7 @@ nav {
   width: 376px;
   height: 268px;
   padding: 25px;
+  margin: 10px 0;
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px #666; }
 
@@ -189,15 +192,20 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 658px; }
+  min-height: 658px; }
 
 .about-LMS-content {
   display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   flex-grow: 1;
   max-width: 1200px; }
 
 .about-LMS-content-text {
   display: flex;
+  flex-basis: 48%;
   flex-direction: column;
   justify-content: space-between; }
   .about-LMS-content-text h2 {
@@ -207,11 +215,15 @@ nav {
   .about-LMS-content-text p {
     color: #666666; }
 
+.about-LMS-content-photo {
+  display: flex;
+  flex-basis: 48%; }
+
 .interested {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 848px;
+  min-height: 848px;
   background: linear-gradient(164deg, #D7D7D7 60%, #FFF 60%, #FFF 40%); }
 
 .interested-content {
@@ -261,6 +273,7 @@ nav {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 70px; }
@@ -352,10 +365,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  min-height: 800px;
   background: linear-gradient(174deg, #D7D7D7 60%, #FFF 60%, #FFF 40%); }
 
 .achievements-content {
+  flex-basis: 1200px;
   max-width: 1200px; }
   .achievements-content h2 {
     font-size: 30px;
@@ -365,9 +379,10 @@ nav {
 
 .achievements-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1200px; }
+  max-width: 1200px; }
 
 .achieve-numbers {
   font-size: 30px;
@@ -398,7 +413,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
+  max-width: 1200px;
   height: 380px;
   margin: 35px 0;
   background-repeat: no-repeat;
@@ -416,15 +431,17 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 540px;
+  min-height: 540px;
   color: #333333;
   background-color: #D7D7D7; }
 
 .live-class-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 1200px; }
+  flex-basis: 1200px;
+  max-width: 1200px; }
 
 .live-class-description {
   flex-basis: 50%; }
@@ -576,13 +593,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px; }
+  min-height: 700px; }
 
 .news-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  flex-basis: 1200px;
   width: 1200px; }
 
 .news-content h2 {

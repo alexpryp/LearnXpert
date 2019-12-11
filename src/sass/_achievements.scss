@@ -2,10 +2,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 800px;
+	min-height: 800px;
 	background: linear-gradient(174deg, #D7D7D7 60%, #FFF 60%, #FFF 40%);
 }
 .achievements-content {
+	flex-basis: $contentWidth;
 	max-width: $contentWidth;
 	h2 {
 		font-size: 30px;
@@ -16,9 +17,10 @@
 }
 .achievements-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 1200px;
+	max-width: 1200px;
 }
 .achieve-numbers {
 	font-size: 30px;
@@ -49,7 +51,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 1200px;
+	max-width: 1200px;
 	height: 380px;
 	margin: 35px 0;
 	background-repeat: no-repeat;

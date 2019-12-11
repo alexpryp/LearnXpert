@@ -2,13 +2,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 700px;
+	min-height: 700px;
 }
 .news-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
+	flex-basis: $contentWidth;
 	width: $contentWidth;
 }
 .news-content h2 {

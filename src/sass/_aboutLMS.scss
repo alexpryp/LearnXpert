@@ -2,15 +2,20 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 658px;
+	min-height: 658px;
 }
 .about-LMS-content {
 	display: flex;
+	margin-top: 100px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	flex-grow: 1;
 	max-width: $contentWidth;
 }
 .about-LMS-content-text {
 	display: flex;
+	flex-basis: 48%;
 	flex-direction: column;
 	justify-content: space-between;
 
@@ -23,4 +28,8 @@
 	p {
 		color: #666666;
 	}
+}
+.about-LMS-content-photo {
+	display: flex;
+	flex-basis: 48%;
 }
