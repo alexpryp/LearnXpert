@@ -2,7 +2,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 650px;
+	min-height: 650px;
 	background-color: #212121;
 }
 .footer-content {
@@ -15,14 +15,13 @@ footer {
 }
 .signup {
 	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
 	justify-content: space-between;
 	align-items: center;
 	p {
 		font-size: 18px;
 	}
-	/* form {
-		height: 40px;
-	} */
 	form input[name="email"] {
 		height: 40px;
 		width: 380px;
@@ -31,11 +30,12 @@ footer {
 		background-color: #000;
 		border: 1px solid #fff;
 		font-family: Arial, sans-serif;
+		&:focus {
+			color: #000;
+			background-color: #fff;
+		}
 	}
-	form input[name="email"]:focus {
-		color: #000;
-		background-color: #fff;
-	}
+
 	form input[name="submit"] {
 		height: 40px;
 		width: 144px;
@@ -52,13 +52,14 @@ footer {
 .social {
 	text-align: right;
 	font-size: 18px;
-	margin: 50px 0;
+	padding: 50px 10px;
 	span {
 		padding: 10px;
 	}
 }
 .addresses {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	line-height: 1.5em;
@@ -76,10 +77,19 @@ footer {
 	font-size: 20px;
 }
 .address {
+	margin: 10px;
 	align-self: flex-start;
 }
 .links {
+	margin: 10px;
 	align-self: flex-start;
+}
+.maps {
+	max-width: 557px;
+	margin: 10px;
+	img {
+		width: 100%;
+	}
 }
 .footer-divider {
 	width: 100%;
@@ -88,6 +98,8 @@ footer {
 }
 .copyright {
 	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -101,4 +113,19 @@ footer {
 }
 .copyr {
 	text-transform: uppercase;
+}
+
+//-----------------------------------------
+// Media queries
+@media screen and (max-width: 950px) {
+	.addresses {
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 700px) {
+	.signup {
+		form input[name="email"] {
+			width: 300px;
+		}
+	}
 }

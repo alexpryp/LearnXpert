@@ -16,6 +16,7 @@
 }
 .live-class-description {
 	flex-basis: 50%;
+	padding: 10px;
 }
 .live-class-description h2 {
 	font-size: 30px;
@@ -33,18 +34,20 @@
 	color: #333;
 	margin: 45px 0;
 }
-.classes-button a {
-	display: block;
-	width: 271px;
-	height: 68px;
-	text-align: center;
-	padding: 23px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-family: Arial, sans-serif;
-	color: #fff;
-	background-color: #1A56D6;
-	border: 2px solid #1A56D6;
+.classes-button {
+	 a {
+		display: block;
+		width: 271px;
+		height: 68px;
+		text-align: center;
+		padding: 23px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial, sans-serif;
+		color: #fff;
+		background-color: #1A56D6;
+		border: 2px solid #1A56D6;
+	}
 }
 .classes-button a:hover {
 	color: #1A56D6;
@@ -52,16 +55,17 @@
 }
 .live-class-videos {
 	display: flex;
+	padding: 10px;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 	flex-basis: 50%;
 }
 .live-class-videos-slide {
 	display: flex;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
-	width: 475px;
 	height: 285px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -72,7 +76,7 @@
 .live-class-videos-selector {
 	display: flex;
 	align-items: center;
-	width: 475px;
+	max-width: 475px;
 	margin-top: 15px;
 }
 .live-class-videos-selector .prev p, .live-class-videos-selector .next p {
@@ -87,4 +91,12 @@
 	flex-grow: 1;
 	text-align: center;
 	font-size: 18px;
+}
+
+//-------------------------------------------------
+// Media queries
+@media screen and (max-width: 700px) {
+	.live-class-description, .live-class-videos {
+		flex-basis: 100%;
+	}
 }

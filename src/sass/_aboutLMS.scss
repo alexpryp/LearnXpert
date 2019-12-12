@@ -23,13 +23,31 @@
 		font-size: 30px;
 		font-weight: bold;
 		color: #192041;
+		padding: 10px;
 	}
 
 	p {
 		color: #666666;
 	}
 }
+.about-LMS-content-text-main {
+	padding: 10px;
+}
+.button {
+	padding: 10px;
+}
 .about-LMS-content-photo {
 	display: flex;
 	flex-basis: 48%;
+	img {
+		width: 100%;
+	}
+}
+
+//-------------------------------------------------
+// Media queries
+@media screen and (max-width: 700px) {
+	.about-LMS-content-text, .about-LMS-content-photo {
+		flex-basis: 100%;
+	}
 }

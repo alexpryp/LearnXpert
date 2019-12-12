@@ -19,12 +19,14 @@
 }
 .news-tiles {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 .news-tiles-item {
 	margin: 10px;
-	width: 360px;
+	flex-basis: 360px;
+	flex-shrink: 0.5;
 	height: 390px;
 	box-shadow: 0px 0px 5px 0px #666;
 }
@@ -75,4 +77,17 @@
 .news-button a:hover {
 	color: #1A56D6;
 	background-color: #fff;
+}
+
+//---------------------------------------
+// Media queries
+@media screen and (max-width: 1160px) {
+	.news-tiles {
+		justify-content: center;
+	}
+	.news-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
