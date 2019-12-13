@@ -39,6 +39,14 @@
 .about-LMS-content-photo {
 	display: flex;
 	flex-basis: 48%;
+	overflow: hidden;
+	border: 1px solid #000;
+	&:hover {
+		cursor: pointer;
+		img {
+			opacity: 0.7;
+		}
+	}
 	img {
 		width: 100%;
 	}

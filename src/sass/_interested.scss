@@ -32,7 +32,12 @@
 	margin: 10px;
 	color: #333333;
 	background-color: #fff;
-	box-shadow: 0px 0px 5px 0px #666;
+	box-shadow: 0px 0px 5px 0px #bbb;
+	&:hover {
+		cursor: pointer;
+		background-color: #bbb;
+		box-shadow: 0px 0px 10px 0px #666;
+	}
 
 	p {
 		font-size: 30px;

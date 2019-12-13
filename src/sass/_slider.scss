@@ -66,6 +66,10 @@
 .event-horn {
 	font-size: 18px;
 	color: #4D4D4D;
+	&:hover {
+		cursor: pointer;
+		color: #000;
+	}
 }
 .card-date {
 	font-size: 30px;
