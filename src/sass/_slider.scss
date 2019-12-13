@@ -42,12 +42,14 @@
 }
 .slider-events-card {
 	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 376px;
+	max-width: 376px;
+	min-width: 280px;
 	height: 268px;
 	padding: 25px;
-	margin: 10px 0;
+	margin: 10px;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px 0px #666;
 }
@@ -103,8 +105,8 @@
 	background-color: #fff;
 }
 .admission {
-	display: flex;
-	flex-direction: column;
+	//display: flex;
+	//flex-direction: column;
 	justify-content: space-around;
 }
 .admission-become {
@@ -115,7 +117,7 @@
 .admission-now a {
 	display: block;
 	margin: 0 auto;
-	width: 271px;
+	width: 250px;
 	height: 68px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -127,4 +129,36 @@
 .admission-now a:hover {
 	color: #fff;
 	background-color: #1A56D6;
+}
+
+//---------------------------------------
+// Media queries
+@media screen and (max-width: 1160px) {
+	.slider-text {
+		h1 {
+			font-size: 60px;
+		}
+	}
+}
+@media screen and (max-width: 700px) {
+	.slider-text {
+		h1 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 20px;
+			margin: 20px 0px;
+		}
+	}	
+}
+@media screen and (max-width: 400px) {
+	.slider-text {
+		h1 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 15px;
+			margin: 20px 0px;
+		}
+	}	
 }

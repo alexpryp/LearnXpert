@@ -20,14 +20,17 @@
 }
 .cards-card {
 	display: flex;
+	flex-grow: 1;
 	flex-direction: column;
-	width: 376px;
+	max-width: 376px;
+	min-width: 300px;
 	height: 730px;
 	margin: 10px;
 	box-shadow: 0px 0px 5px 0px #666;
 }
 .cards-card-image {
-	width: 376px;
+	width: 100%;
+	//width: 376px;
 	height: 350px;
 	background-repeat: no-repeat;
 	background-size: cover;
