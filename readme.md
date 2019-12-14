@@ -1,16 +1,15 @@
-**Responsive LearnXpert page with animation**
+**Responsive LearnXpert page**
 =================
 
 ![screenshot of sample](Sample.jpg)
 
-This page is compliant with w3c standards, is responsive, and contains animations set using CSS, jQuery and JavaScript.
+This page is compliant with w3c standards, and is responsive.
 [The site layout was downloaded from here](https://psd.in.ua/flat-maket-dlya-obrazovatelnogo-sayta/)
 
 The following technologies were used to create this page:
 * HTML5
 * CSS3, Flexbox, Grid layout
 * SASS
-* JavaScript, jQuery
-* Gulp, Autoprefixer, Babel, Sourcemaps
+* Gulp, Autoprefixer, Sourcemaps
 * Git
 * Photoshop, PSDetch

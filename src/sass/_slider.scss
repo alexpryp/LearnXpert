@@ -52,6 +52,12 @@
 	margin: 10px;
 	background-color: #fff;
 	box-shadow: 0px 0px 10px 0px #666;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #ccc;
+		transition: 0.5s;
+	}
 }
 .card-head {
 	display: flex;
