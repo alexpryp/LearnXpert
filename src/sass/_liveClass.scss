@@ -107,11 +107,3 @@
 	text-align: center;
 	font-size: 18px;
 }
-
-//-------------------------------------------------
-// Media queries
-@media screen and (max-width: 700px) {
-	.live-class-description, .live-class-videos {
-		flex-basis: 100%;
-	}
-}

@@ -66,23 +66,3 @@ nav {
 	flex-grow: 1;
 	padding: 10px;
 }
-
-//-----------------------------------------
-// Media queries
-@media screen and (max-width: 1200px) {
-	.nav-content {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		flex-grow: 1;
-		max-width: $contentWidth;
-	}
-}
-@media screen and (max-width: 400px) {
-	.register-content {
-		.contacts, .register-form {
-			padding: 10px 0;
-		}
-	}
-}

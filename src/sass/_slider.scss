@@ -140,35 +140,3 @@
 	color: #fff;
 	background-color: #1A56D6;
 }
-
-//---------------------------------------
-// Media queries
-@media screen and (max-width: 1160px) {
-	.slider-text {
-		h1 {
-			font-size: 60px;
-		}
-	}
-}
-@media screen and (max-width: 700px) {
-	.slider-text {
-		h1 {
-			font-size: 40px;
-		}
-		p {
-			font-size: 20px;
-			margin: 20px 0px;
-		}
-	}	
-}
-@media screen and (max-width: 400px) {
-	.slider-text {
-		h1 {
-			font-size: 30px;
-		}
-		p {
-			font-size: 15px;
-			margin: 20px 0px;
-		}
-	}	
-}

@@ -93,16 +93,3 @@
 	color: #1A56D6;
 	background-color: #fff;
 }
-
-//---------------------------------------
-// Media queries
-@media screen and (max-width: 1160px) {
-	.news-tiles {
-		justify-content: center;
-	}
-	.news-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
