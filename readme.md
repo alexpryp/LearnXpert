@@ -10,6 +10,7 @@ The following technologies were used to create this page:
 * HTML5
 * CSS3, Flexbox, Grid layout
 * SASS
+* Node.js
 * Gulp, Autoprefixer, Sourcemaps
 * Git
 * Photoshop, PSDetch
